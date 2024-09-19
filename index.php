@@ -12,14 +12,18 @@
 
 <body>
     <div class="container d-flex justify-content-center align-items-center vh-100">
-        <form class="w-50 bg-light p-5 rounded-4 custom-width-mobile">
+        <form action="generator.php" method="post"
+            class="w-50 bg-light p-5 rounded-4 custom-width-mobile shadow bg-body-tertiary rounded">
             <div class="mp-3 text-center">
                 <img src="logo.png" class="w-50 my-4" alt="">
-                <h3 class="my-4">Certificates Generator</h3>
+                <h2 class="my-4">Certificates Generator</h2>
             </div>
             <div class="mp-3">
                 <label for="name" class="form-label">Student name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter student name">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter student name">
+            </div>
+            <div class="mp-3 text-center">
+                <button type="submit" name="submit" class="btn btn-primary mt-3">Generate</button>
             </div>
             <p class="text-center mt-4">© 2024 Mena Ehab. All rights reserved.</p>
         </form>
