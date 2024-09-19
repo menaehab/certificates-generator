@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .custom-width-mobile {
+    width: 90% !important;
+  }
+}
